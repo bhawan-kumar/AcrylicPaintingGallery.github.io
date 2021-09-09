@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f9f9f9;
+}
+.main {
+    overflow: hidden;
+    padding: 15px;
+}
+.banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.heading > span {
+    color: #b50d10;
+}
+.para {
+    font-size: 20px;
+}
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.image-div {
+    width: 50%;
+    margin-right: 15px;
+    max-height: 350px;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.content > h2 {
+    font-size: 25px;
+    line-height: 2;
+}
+.content > p {
+    font-size: 16px;
+}
+.content .btn {
+    max-width: 80px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+@media screen and (max-width: 450px)
+{
+    .card {
+        flex-direction: column;
+    }
+    .image-div {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 450px)
+{
+    .container .card:nth-child(even) .image-div
+    {
+        order: 2;
+    } 
+}
